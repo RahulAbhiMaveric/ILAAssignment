@@ -36,15 +36,4 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/text_view2"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text_view1"
-        android:layout_centerInParent="true"
-        android:layout_toEndOf="@+id/image_view"
-        android:textSize="15sp" />
-
 </androidx.cardview.widget.CardView>

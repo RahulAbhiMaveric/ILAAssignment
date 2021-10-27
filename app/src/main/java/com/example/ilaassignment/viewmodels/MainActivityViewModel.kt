@@ -5,74 +5,91 @@ import androidx.lifecycle.ViewModel
 import com.example.ilaassignment.R
 import com.example.ilaassignment.data.ExampleItem
 
+/**
+ * MainActivityViewModel inherit @see ViewModel
+ */
 class MainActivityViewModel : ViewModel() {
     private val exampleList = arrayListOf<ExampleItem>()
     val list = MutableLiveData<List<ExampleItem>>()
 
+    /**
+     * method fillExampleList
+     * add list item for ui
+     */
     fun fillExampleList() {
         exampleList.clear()
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "One", "Ten"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Two", "Eleven"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Three", "Twelve"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Four", "Thirteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "Five", "Fourteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Six", "Fifteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Seven", "Sixteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "Eight", "Seventeen"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Nine", "Eighteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "One", "Ten"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Two", "Eleven"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Three", "Twelve"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Four", "Thirteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "Five", "Fourteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Six", "Fifteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Seven", "Sixteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "Eight", "Seventeen"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Nine", "Eighteen"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "One"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Two"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Three"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Four"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "Five"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Six"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Seven"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "Eight"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Nine"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "One"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Two"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Three"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Four"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "Five"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Six"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Seven"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "Eight"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Nine"))
         list.value = exampleList
     }
+
+    /**
+     * method fillExampleList1
+     * add list item for ui
+     */
     fun fillExampleList1() {
         exampleList.clear()
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Three", "Twelve"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Four", "Thirteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "Five", "Fourteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Six", "Fifteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Seven", "Sixteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "Eight", "Seventeen"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Nine", "Eighteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "One", "Ten"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Two", "Eleven"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Three", "Twelve"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Four", "Thirteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "Five", "Fourteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Six", "Fifteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Seven", "Sixteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "Eight", "Seventeen"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Nine", "Eighteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "One", "Ten"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Two", "Eleven"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Three"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Four"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "Five"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Six"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Seven"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "Eight"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Nine"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "One"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Two"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Three"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Four"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "Five"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Six"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Seven"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "Eight"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Nine"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "One"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Two"))
         list.value = exampleList
     }
+
+    /**
+     * method fillExampleList2
+     * add list item for ui
+     */
     fun fillExampleList2() {
         exampleList.clear()
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Four", "Thirteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "Five", "Fourteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Three", "Twelve"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Six", "Fifteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Seven", "Sixteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "Eight", "Seventeen"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Nine", "Eighteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "One", "Ten"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Two", "Eleven"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Three", "Twelve"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Four", "Thirteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "Five", "Fourteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Six", "Fifteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Seven", "Sixteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "Eight", "Seventeen"))
-        exampleList.add(ExampleItem(R.drawable.ic_sun, "Nine", "Eighteen"))
-        exampleList.add(ExampleItem(R.drawable.ic_audio, "One", "Ten"))
-        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Two", "Eleven"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Four"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "Five"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Three"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Six"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Seven"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "Eight"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Nine"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "One"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Two"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Three"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Four"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "Five"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Six"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Seven"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "Eight"))
+        exampleList.add(ExampleItem(R.drawable.ic_sun, "Nine"))
+        exampleList.add(ExampleItem(R.drawable.ic_audio, "One"))
+        exampleList.add(ExampleItem(R.drawable.ic_launcher_foreground, "Two"))
         list.value = exampleList
     }
 

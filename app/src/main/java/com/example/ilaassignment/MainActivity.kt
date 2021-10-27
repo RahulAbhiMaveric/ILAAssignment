@@ -21,6 +21,9 @@ import com.example.ilaassignment.viewmodels.MainActivityViewModel
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
+/**
+ *class MainActivity
+ */
 class MainActivity : AppCompatActivity() {
     private lateinit var mViewPager: ViewPager2
 
@@ -32,6 +35,9 @@ class MainActivity : AppCompatActivity() {
     private val imageList: IntArray =
         intArrayOf(R.drawable.books, R.drawable.books2, R.drawable.books2017)
 
+    /**
+     * overridden method onCreate
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -53,6 +59,10 @@ class MainActivity : AppCompatActivity() {
         observeList()
     }
 
+    /**
+     * method onClickListener
+     * handle click
+     */
     private fun onClickListener() {
         val searchEditText =
             searchView.findViewById<EditText>(androidx.appcompat.R.id.search_src_text)
@@ -74,14 +84,14 @@ class MainActivity : AppCompatActivity() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
                 Log.e("Selected_Page", position.toString())
-                when(position){
-                    0->{
+                when (position) {
+                    0 -> {
                         mainViewModel.fillExampleList()
                     }
-                    1->{
+                    1 -> {
                         mainViewModel.fillExampleList1()
                     }
-                    2->{
+                    2 -> {
                         mainViewModel.fillExampleList2()
                     }
                 }
@@ -91,6 +101,10 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    /**
+     * method observeList
+     * observe the changes in list and update ui accordingly
+     */
     private fun observeList() {
         mainViewModel.list.observe(this, {
             recyclerAdapter = ExampleAdapter(it as MutableList<ExampleItem>)
